@@ -1,6 +1,6 @@
 import React,{Component, useState } from'react';
 import MicRecorder from "mic-recorder-to-mp3";
-import {readFile} from "./assembly/uploadfile";
+import {download} from "./assembly/uploadfile";
 const url = 'https://api.assemblyai.com/v2/upload';
 
 const Mp3Recorder = new MicRecorder({
@@ -12,7 +12,6 @@ function Record(props) {
     var [recording, stateRecording] = useState('');
     
     function startRecord () {
-        stateRecording('recordActive');
         Mp3Recorder.start()
         .then(() => {
             stateRecording('recordActive');
@@ -29,7 +28,7 @@ function Record(props) {
               const player = new Audio(audioURL);
               player.play();
               console.log(audioURL);
-              var link = readFile(audioURL);
+              var link = download('F:\Projects\fansync\app\src\components\audio.mp3');
               console.log(link);
         })
         .catch((e) => console.log(e));

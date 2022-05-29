@@ -3,6 +3,7 @@
     "dotenv": "^16.0.1",
     "mic-recorder-to-mp3": "^2.2.2",
     "node-fetch": "^2.6.1",
-    "react-mp3-recorder": "^1.1.2"
+    "react-mp3-recorder": "^1.1.2",
+    "react-router-dom": "^6.3.0"
   }
 }

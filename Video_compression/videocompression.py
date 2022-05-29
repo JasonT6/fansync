@@ -8,8 +8,8 @@ vid = cv2.VideoCapture("Video_compression/vid1.mp4")
 fps = vid.get(cv2.CAP_PROP_FPS)
 # print("Frame rate: ", int(fps), "FPS")
 
-height = 15
-width = 60
+height = 28
+width = 78
 array = []
 frameCount = 0
 success = True
@@ -18,7 +18,7 @@ while success == True:
     success, frame_prime = vid.read()
     if success == True:
         frame = cv2.resize(frame_prime,(width, height),fx = 0, fy = 0, interpolation = cv2.INTER_AREA)
-        # cv2.imshow("frame", frame)
+        #cv2.imshow("frame", frame)
         array.append(frame)
         frameCount += 1
 

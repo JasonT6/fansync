@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Record from './components/record';
+import Display from './components/display';
 
 function App() {
   return (
     <div className="container">
-      <Record/>
+      <Display/>
     </div>
   );
 }

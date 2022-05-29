@@ -19,7 +19,9 @@ function print(data) {
     case 'queued':
     case 'processing':
       console.log('AssemblyAI is still transcribing your audio, please try again in a few minutes!');
-      break;
+      setTimeout(function () {
+        print(data);
+    }, 1000);
     case 'completed':
       console.log(`Success: ${data}`);
       console.log(`Text: ${data.text}`);
