@@ -40,10 +40,10 @@
 .grid {
   display: grid;
   transition: all 1s ease;
-  /* grid-template-columns: repeat(78, 200vw);
-  grid-template-rows: repeat(28,  200vh); */
- grid-template-columns: repeat(78, 4px);
-  grid-template-rows: repeat(28,  4px);
+  grid-template-columns: repeat(78, 200vw);
+  grid-template-rows: repeat(28,  200vh);
+ /* grid-template-columns: repeat(78, 4px);
+  grid-template-rows: repeat(28,  4px); */
   gap: 7px;
 }
 

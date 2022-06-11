@@ -34,7 +34,7 @@ function Display(props){
     function handleClick(){
         buttonSet('recordactive');
         frameSet(frame + 1);
-        let framerate = 50;
+        let framerate = 20;
         let framecur = 0;
         let index = 0;
         let index2 = 0;
